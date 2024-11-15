@@ -1,0 +1,32 @@
+@import url('reset.css');
+
+:root {
+    --green: #44FFA1;
+    --purple-900: #24053E;
+    --purple-500: #584D62;
+    --purple-100: #FCF8FF;
+    --white: #FFFFFF;
+}
+
+header {
+    height: 600px;
+    position: relative;
+    background-color: var(--purple-900);
+
+}
+
+.header_shape {
+    height: 170px;
+    width: 100%;
+    position: absolute;
+    top: 80%;
+    right: 0rem;
+    background-color: var(--purple-900);
+    clip-path: ellipse(60% 55% at 50% 45%);
+}
+
+
+/* body {
+    font-family: 'Manrope', sans-serif;
+    font-family: 'Fraunces', serif;
+} */
