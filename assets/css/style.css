@@ -71,6 +71,12 @@ h1 {
 
 .highlight {
     position: relative;
+    transition: all 0.3s ease-in-out;
+}
+
+a.highlight:hover {
+    cursor: pointer;
+    color: var(--green);
 }
 
 .highlight::after {
@@ -92,11 +98,20 @@ a.button_link {
     font-size: 18px;
     width: 100%;
     padding: 12px 32px;
+    border: 2px solid var(--green);
+    transition: all 0.3s ease-in-out;
+
+}
+
+a.button_link:hover {
+    background-color: transparent;
+    color: var(--green);
+    cursor: pointer;
 }
 
 header a.button_link {
     margin-top: 40px;
-    max-width: 162px;
+    max-width: 166px;
     text-align: center;
     margin-inline: auto;
     margin-bottom: 86px;
@@ -204,7 +219,7 @@ header a.button_link {
 }
 
 .cta_section .container .content .button_link {
-    max-width: 207px;
+    max-width: 210px;
 }
 
 .cta_section .container .content img {
@@ -232,4 +247,8 @@ footer .icons {
     display: flex;
     gap: 28px;
     margin-inline: auto;
+}
+
+footer .icons img {
+    cursor: pointer;
 }
