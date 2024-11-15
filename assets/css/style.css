@@ -8,11 +8,21 @@
     --white: #FFFFFF;
 }
 
+body {
+    font-family: 'Manrope', sans-serif;
+
+}
+
+.container {
+    width: 90%;
+    max-width: 1120px;
+    margin-inline: auto;
+}
+
 header {
     height: 600px;
     position: relative;
     background-color: var(--purple-900);
-
 }
 
 .header_shape {
@@ -26,7 +36,34 @@ header {
 }
 
 
+
+nav {
+    padding-top: 56px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    color: white;
+    position: relative;
+}
+
+nav a:after {
+    position: absolute;
+    color: white;
+    content: " ";
+    height: 3px;
+    background-color: var(--green);
+    bottom: -8px;
+    left: 0;
+    width: 100%;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 180%;
+
+}
+
 /* body {
-    font-family: 'Manrope', sans-serif;
     font-family: 'Fraunces', serif;
 } */
