@@ -23,6 +23,7 @@ header {
     height: 600px;
     position: relative;
     background-color: var(--purple-900);
+    color: white;
 }
 
 .header_shape {
@@ -35,35 +36,113 @@ header {
     clip-path: ellipse(60% 55% at 50% 45%);
 }
 
-
-
 nav {
-    padding-top: 56px;
+    padding: 56px 0px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 nav a {
+    position: relative;
+    line-height: 180%;
+    font-weight: 700;
+    font-size: 18px;
     color: white;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Fraunces', serif;
+}
+
+h1 {
+    font-size: 80px;
+    max-width: 14ch;
+    font-weight: 900;
+    margin-inline: auto;
+    text-align: center;
+}
+
+.highlight {
     position: relative;
 }
 
-nav a:after {
+.highlight::after {
+    content: '';
     position: absolute;
-    color: white;
-    content: " ";
-    height: 3px;
-    background-color: var(--green);
-    bottom: -8px;
+    bottom: 0;
     left: 0;
     width: 100%;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 180%;
-
+    height: 3px;
+    background-color: var(--green);
 }
 
-/* body {
-    font-family: 'Fraunces', serif;
-} */
+a.button_link {
+    color: var(--purple-900);
+    background-color: var(--green);
+    margin-top: 40px;
+    line-height: 180%;
+    font-weight: 700;
+    font-size: 18px;
+    width: 100%;
+    max-width: 162px;
+    text-align: center;
+    padding: 12px 32px;
+    margin-inline: auto;
+    margin-bottom: 86px;
+}
+
+.hero_image {
+    height: 441px;
+    z-index: 100;
+    margin-inline: auto;
+    position: relative;
+}
+
+.features_section {
+    padding-top: 420px;
+    padding-bottom: 144px;
+    background-color: var(--purple-100);
+    color: var(--purple-900);
+}
+
+.features {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 1rem;
+}
+
+.features .feature {
+    flex: 1;
+    text-align: center;
+}
+
+.features .feature .number {
+    border-radius: 100%;
+    border: 1px solid var(--purple-900);
+    width: 56px;
+    height: 56px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    font-size: 24px;
+    margin-inline: auto;
+}
+
+.features .feature .title {
+    margin-top: 56px;
+    margin-bottom: 28px;
+    font-weight: 600;
+    line-height: 120%;
+    font-size: 32px;
+}
+
+.features .feature p {
+    line-height: 180%;
+    font-size: 18px;
+}
