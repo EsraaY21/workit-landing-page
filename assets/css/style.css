@@ -10,7 +10,6 @@
 
 body {
     font-family: 'Manrope', sans-serif;
-
 }
 
 .container {
@@ -24,6 +23,10 @@ header {
     position: relative;
     background-color: var(--purple-900);
     color: white;
+
+    background-image: url('../images/bg-pattern-1.svg'), url('../images/bg-pattern-2.svg');
+    background-repeat: no-repeat;
+    background-position: -4vw 12vh, 90vw 35vh;
 }
 
 .header_shape {
@@ -80,17 +83,21 @@ h1 {
     background-color: var(--green);
 }
 
+
 a.button_link {
     color: var(--purple-900);
     background-color: var(--green);
-    margin-top: 40px;
     line-height: 180%;
     font-weight: 700;
     font-size: 18px;
     width: 100%;
+    padding: 12px 32px;
+}
+
+header a.button_link {
+    margin-top: 40px;
     max-width: 162px;
     text-align: center;
-    padding: 12px 32px;
     margin-inline: auto;
     margin-bottom: 86px;
 }
@@ -103,7 +110,7 @@ a.button_link {
 }
 
 .features_section {
-    padding-top: 420px;
+    padding-top: 480px;
     padding-bottom: 144px;
     background-color: var(--purple-100);
     color: var(--purple-900);
@@ -114,6 +121,17 @@ a.button_link {
     justify-content: space-between;
     align-items: stretch;
     gap: 1rem;
+    position: relative;
+}
+
+.features_section_shape {
+    height: 170px;
+    width: 100%;
+    position: absolute;
+    top: 206%;
+    right: 0rem;
+    background-color: var(--purple-100);
+    clip-path: ellipse(60% 55% at 50% 45%);
 }
 
 .features .feature {
@@ -145,4 +163,73 @@ a.button_link {
 .features .feature p {
     line-height: 180%;
     font-size: 18px;
+}
+
+
+.cta_section {
+    padding-top: 200px;
+    padding-bottom: 112px;
+}
+
+.cta_section img {
+    height: 477px;
+    width: 477px;
+}
+
+.cta_section .container {
+    display: flex;
+    align-items: flex-start;
+}
+
+.cta_section .container .content {
+    background-color: var(--purple-900);
+    color: white;
+    padding: 64px;
+    position: relative;
+    margin-left: -84px;
+    margin-top: 164px;
+}
+
+.cta_section .container .content h4 {
+    font-size: 56px;
+    font-weight: 600;
+    line-height: 120%;
+    margin-bottom: 32px;
+}
+
+.cta_section .container .content p {
+    line-height: 180%;
+    font-size: 18px;
+    margin-bottom: 32px;
+}
+
+.cta_section .container .content .button_link {
+    max-width: 207px;
+}
+
+.cta_section .container .content img {
+    position: absolute;
+    height: 137px;
+    top: 80%;
+    right: 0%;
+}
+
+footer {
+    padding-bottom: 56px;
+}
+
+footer .content {
+    display: flex;
+    flex-direction: column;
+    gap: 56px;
+}
+
+footer img {
+    margin-inline: auto;
+}
+
+footer .icons {
+    display: flex;
+    gap: 28px;
+    margin-inline: auto;
 }
