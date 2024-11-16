@@ -19,7 +19,7 @@ body {
 }
 
 header {
-    height: 600px;
+    height: 37.5rem;
     position: relative;
     background-color: var(--purple-900);
     color: white;
@@ -30,7 +30,7 @@ header {
 }
 
 .header_shape {
-    height: 170px;
+    height: 10.625rem;
     width: 100%;
     position: absolute;
     top: 80%;
@@ -40,7 +40,7 @@ header {
 }
 
 nav {
-    padding: 56px 0px;
+    padding: 3.5rem 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -48,9 +48,9 @@ nav {
 
 nav a {
     position: relative;
-    line-height: 180%;
+    line-height: 1.8;
     font-weight: 700;
-    font-size: 18px;
+    font-size: 1.125rem;
     color: white;
 }
 
@@ -62,7 +62,7 @@ h4 {
 }
 
 h1 {
-    font-size: 80px;
+    font-size: 5rem;
     max-width: 14ch;
     font-weight: 900;
     margin-inline: auto;
@@ -85,22 +85,20 @@ a.highlight:hover {
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 3px;
+    height: 0.1875rem;
     background-color: var(--green);
 }
-
 
 a.button_link {
     color: var(--purple-900);
     background-color: var(--green);
-    line-height: 180%;
+    line-height: 1.8;
     font-weight: 700;
-    font-size: 18px;
+    font-size: 1.125rem;
     width: 100%;
-    padding: 12px 32px;
-    border: 2px solid var(--green);
+    padding: 0.75rem 2rem;
+    border: 0.125rem solid var(--green);
     transition: all 0.3s ease-in-out;
-
 }
 
 a.button_link:hover {
@@ -110,23 +108,23 @@ a.button_link:hover {
 }
 
 header a.button_link {
-    margin-top: 40px;
-    max-width: 166px;
+    margin-top: 2.5rem;
+    max-width: 10.375rem;
     text-align: center;
     margin-inline: auto;
-    margin-bottom: 86px;
+    margin-bottom: 5.375rem;
 }
 
 .hero_image {
-    height: 441px;
+    height: 27.5625rem;
     z-index: 100;
     margin-inline: auto;
     position: relative;
 }
 
 .features_section {
-    padding-top: 480px;
-    padding-bottom: 144px;
+    padding-top: 30rem;
+    padding-bottom: 9rem;
     background-color: var(--purple-100);
     color: var(--purple-900);
 }
@@ -140,7 +138,7 @@ header a.button_link {
 }
 
 .features_section_shape {
-    height: 170px;
+    height: 10.625rem;
     width: 100%;
     position: absolute;
     top: 206%;
@@ -156,39 +154,38 @@ header a.button_link {
 
 .features .feature .number {
     border-radius: 100%;
-    border: 1px solid var(--purple-900);
-    width: 56px;
-    height: 56px;
+    border: 0.0625rem solid var(--purple-900);
+    width: 3.5rem;
+    height: 3.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
     font-weight: 600;
-    font-size: 24px;
+    font-size: 1.5rem;
     margin-inline: auto;
 }
 
 .features .feature .title {
-    margin-top: 56px;
-    margin-bottom: 28px;
+    margin-top: 3.5rem;
+    margin-bottom: 1.75rem;
     font-weight: 600;
-    line-height: 120%;
-    font-size: 32px;
+    line-height: 1.2;
+    font-size: 2rem;
 }
 
 .features .feature p {
-    line-height: 180%;
-    font-size: 18px;
+    line-height: 1.8;
+    font-size: 1.125rem;
 }
 
-
 .cta_section {
-    padding-top: 200px;
-    padding-bottom: 112px;
+    padding-top: 12.5rem;
+    padding-bottom: 7rem;
 }
 
 .cta_section img {
-    height: 477px;
-    width: 477px;
+    height: 29.8125rem;
+    width: 29.8125rem;
 }
 
 .cta_section .container {
@@ -199,44 +196,44 @@ header a.button_link {
 .cta_section .container .content {
     background-color: var(--purple-900);
     color: white;
-    padding: 64px;
+    padding: 4rem;
     position: relative;
-    margin-left: -84px;
-    margin-top: 164px;
+    margin-left: -5.25rem;
+    margin-top: 10.25rem;
 }
 
 .cta_section .container .content h4 {
-    font-size: 56px;
+    font-size: 3.5rem;
     font-weight: 600;
-    line-height: 120%;
-    margin-bottom: 32px;
+    line-height: 1.2;
+    margin-bottom: 2rem;
 }
 
 .cta_section .container .content p {
-    line-height: 180%;
-    font-size: 18px;
-    margin-bottom: 32px;
+    line-height: 1.8;
+    font-size: 1.125rem;
+    margin-bottom: 2rem;
 }
 
 .cta_section .container .content .button_link {
-    max-width: 210px;
+    max-width: 13.125rem;
 }
 
 .cta_section .container .content img {
     position: absolute;
-    height: 137px;
+    height: 8.5625rem;
     top: 80%;
     right: 0%;
 }
 
 footer {
-    padding-bottom: 56px;
+    padding-bottom: 3.5rem;
 }
 
 footer .content {
     display: flex;
     flex-direction: column;
-    gap: 56px;
+    gap: 3.5rem;
 }
 
 footer img {
@@ -245,7 +242,7 @@ footer img {
 
 footer .icons {
     display: flex;
-    gap: 28px;
+    gap: 1.75rem;
     margin-inline: auto;
 }
 
