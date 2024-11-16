@@ -123,7 +123,7 @@ header a.button_link {
 }
 
 .features_section {
-    padding-top: 30rem;
+    padding-top: 26rem;
     padding-bottom: 9rem;
     background-color: var(--purple-100);
     color: var(--purple-900);
@@ -134,17 +134,6 @@ header a.button_link {
     justify-content: space-between;
     align-items: stretch;
     gap: 1rem;
-    position: relative;
-}
-
-.features_section_shape {
-    height: 10.625rem;
-    width: 100%;
-    position: absolute;
-    top: 206%;
-    right: 0rem;
-    background-color: var(--purple-100);
-    clip-path: ellipse(60% 55% at 50% 45%);
 }
 
 .features .feature {
@@ -179,7 +168,7 @@ header a.button_link {
 }
 
 .cta_section {
-    padding-top: 12.5rem;
+    padding-top: 7rem;
     padding-bottom: 7rem;
 }
 
@@ -216,7 +205,7 @@ header a.button_link {
 }
 
 .cta_section .container .content .button_link {
-    max-width: 13.125rem;
+    max-width: 14.125rem;
 }
 
 .cta_section .container .content img {
@@ -248,4 +237,201 @@ footer .icons {
 
 footer .icons img {
     cursor: pointer;
+}
+
+
+@media (max-width: 1280px) {
+    h1 {
+        font-size: 4rem;
+    }
+
+    .hero_image {
+        height: 20rem;
+    }
+
+    .features {
+        flex-direction: column;
+    }
+
+    .features .feature {
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        text-align: left;
+        gap: 56px;
+    }
+
+    .features_section {
+        padding-top: 22rem;
+    }
+
+}
+
+@media (max-width: 1024px) {
+    .features_section {
+        padding-top: 20rem;
+    }
+
+    .feature>div {
+        width: 90%;
+    }
+
+    .cta_section img {
+        height: 22rem;
+        width: 22rem;
+    }
+
+    .cta_section .container .content h4 {
+        font-size: 3.2rem;
+    }
+}
+
+@media (max-width: 924px) {
+    .features_section {
+        padding-top: 18rem;
+    }
+
+    .cta_section {
+        padding-top: 8rem;
+    }
+
+    .cta_section .container .content h4 {
+        font-size: 2.6rem;
+    }
+
+    .cta_section .container .content img {
+        position: absolute;
+        height: 8.5625rem;
+        top: 80%;
+        right: -8%;
+    }
+
+    .cta_section .container .content p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 840px) {
+    header {
+        background-position: -17vw 12vh, 90vw 35vh;
+    }
+
+    .cta_section .container .content h4 {
+        font-size: 2.4rem;
+    }
+}
+
+@media (max-width: 800px) {
+    .cta_section img {
+        height: 19rem;
+        width: 19rem;
+    }
+
+    .cta_section .container .content {
+        margin-left: -5.45rem;
+    }
+}
+
+@media (max-width: 790px) {
+    .cta_section img {
+        height: 18rem;
+        width: 18rem;
+    }
+}
+
+@media (max-width: 700px) {
+    .cta_section .container {
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+    }
+
+    .cta_section .container .content {
+        margin-left: 0rem;
+        margin-top: -2.8rem;
+    }
+}
+
+@media (max-width: 572px) {
+    h1 {
+        font-size: 3rem;
+    }
+
+    .hero_image {
+        height: 18rem;
+    }
+
+    header {
+        background-image: none;
+        height: 30.5rem;
+    }
+
+    .features .feature {
+        flex-direction: column;
+        text-align: center;
+        gap: 0px;
+    }
+
+    .features .feature .title {
+        margin-top: 1.4rem;
+        margin-bottom: 1.4rem;
+        font-size: 2rem;
+    }
+
+    .features {
+        gap: 2.8rem;
+    }
+
+    .cta_section .container .content {
+        text-align: center;
+        padding: 3.4rem;
+    }
+
+    .cta_section .container .content .button_link {
+        margin-inline: auto;
+    }
+
+    .cta_section .container .content img {
+        display: none;
+    }
+
+}
+
+@media (max-width: 420px) {
+    h1 {
+        font-size: 2.2rem;
+    }
+
+    .cta_section .container .content h4 {
+        font-size: 2.0rem;
+    }
+
+    .cta_section .container .content {
+        padding: 2.8rem;
+    }
+
+}
+
+@media (max-width: 400px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    nav a {
+        font-size: 1rem;
+    }
+
+    .cta_section .container .content {
+        padding: 2.2rem;
+    }
+
+    a.button_link {
+        font-size: 1rem;
+    }
+
+    .features .feature .title {
+        font-size: 1.8rem;
+    }
 }
