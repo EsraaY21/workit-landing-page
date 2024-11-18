@@ -210,9 +210,9 @@ header a.button_link {
 
 .cta_section .container .content img {
     position: absolute;
-    height: 8.5625rem;
-    top: 80%;
-    right: 0%;
+    height: 13rem;
+    top: 62%;
+    right: -5%;
 }
 
 footer {
