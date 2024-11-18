@@ -12,14 +12,15 @@ body {
     font-family: 'Manrope', sans-serif;
 }
 
-.container {
+.container,
+.features {
     width: 90%;
     max-width: 1120px;
     margin-inline: auto;
 }
 
 header {
-    height: 37.5rem;
+    height: clamp(35rem, 30vw, 37.5rem);
     position: relative;
     background-color: var(--purple-900);
     color: white;
@@ -50,7 +51,7 @@ nav a {
     position: relative;
     line-height: 1.8;
     font-weight: 700;
-    font-size: 1.125rem;
+    font-size: clamp(1rem, 2vw, 1.5rem);
     color: white;
 }
 
@@ -62,16 +63,20 @@ h4 {
 }
 
 h1 {
-    font-size: 5rem;
+    font-size: clamp(2rem, 5vw, 5rem);
     max-width: 14ch;
     font-weight: 900;
     margin-inline: auto;
     text-align: center;
+    line-height: 1.2;
 }
 
 .highlight {
     position: relative;
     transition: all 0.3s ease-in-out;
+    font-size: inherit;
+    font-weight: inherit;
+    line-height: inherit;
 }
 
 a.highlight:hover {
@@ -94,7 +99,7 @@ a.button_link {
     background-color: var(--green);
     line-height: 1.8;
     font-weight: 700;
-    font-size: 1.125rem;
+    font-size: clamp(1rem, 1vw, 1.125rem);
     width: 100%;
     padding: 0.75rem 2rem;
     border: 0.125rem solid var(--green);
@@ -116,14 +121,14 @@ header a.button_link {
 }
 
 .hero_image {
-    height: 27.5625rem;
+    height: clamp(17rem, 22vw, 27.5625rem);
     z-index: 100;
     margin-inline: auto;
     position: relative;
 }
 
 .features_section {
-    padding-top: 26rem;
+    padding-top: 28%;
     padding-bottom: 9rem;
     background-color: var(--purple-100);
     color: var(--purple-900);
@@ -133,7 +138,7 @@ header a.button_link {
     display: flex;
     justify-content: space-between;
     align-items: stretch;
-    gap: 1rem;
+    gap: clamp(0.5rem, 2vw, 2rem);
 }
 
 .features .feature {
@@ -155,11 +160,10 @@ header a.button_link {
 }
 
 .features .feature .title {
-    margin-top: 3.5rem;
-    margin-bottom: 1.75rem;
+    margin-top: clamp(1rem, 2vw, 3.5rem);
     font-weight: 600;
     line-height: 1.2;
-    font-size: 2rem;
+    font-size: clamp(1.5rem, 3vw, 2rem);
 }
 
 .features .feature p {
@@ -168,13 +172,12 @@ header a.button_link {
 }
 
 .cta_section {
-    padding-top: 7rem;
-    padding-bottom: 7rem;
+    padding-top: 10%;
+    padding-bottom: 10%;
 }
 
 .cta_section img {
-    height: 29.8125rem;
-    width: 29.8125rem;
+    height: clamp(15rem, 38vw, 29.8125rem);
 }
 
 .cta_section .container {
@@ -185,14 +188,14 @@ header a.button_link {
 .cta_section .container .content {
     background-color: var(--purple-900);
     color: white;
-    padding: 4rem;
+    padding: 5%;
     position: relative;
     margin-left: -5.25rem;
     margin-top: 10.25rem;
 }
 
 .cta_section .container .content h4 {
-    font-size: 3.5rem;
+    font-size: clamp(2rem, 5vw, 3.5rem);
     font-weight: 600;
     line-height: 1.2;
     margin-bottom: 2rem;
@@ -200,7 +203,7 @@ header a.button_link {
 
 .cta_section .container .content p {
     line-height: 1.8;
-    font-size: 1.125rem;
+    font-size: clamp(1rem, 1.2, 1.5rem);
     margin-bottom: 2rem;
 }
 
@@ -210,9 +213,9 @@ header a.button_link {
 
 .cta_section .container .content img {
     position: absolute;
-    height: 13rem;
+    height: clamp(10rem, 10vw + 5rem, 15rem);
     top: 62%;
-    right: -5%;
+    right: 4%;
 }
 
 footer {
@@ -240,15 +243,7 @@ footer .icons img {
 }
 
 
-@media (max-width: 1280px) {
-    h1 {
-        font-size: 4rem;
-    }
-
-    .hero_image {
-        height: 20rem;
-    }
-
+@media (max-width: 1024px) {
     .features {
         flex-direction: column;
     }
@@ -262,54 +257,19 @@ footer .icons img {
         gap: 3.5rem;
     }
 
-    .features_section {
-        padding-top: 22rem;
-    }
-
-}
-
-@media (max-width: 1024px) {
-    .features_section {
-        padding-top: 20rem;
-    }
-
     .feature>div {
         width: 90%;
     }
 
-    .cta_section img {
-        height: 22rem;
-        width: 22rem;
-    }
-
-    .cta_section .container .content h4 {
-        font-size: 3.2rem;
-    }
 }
 
 @media (max-width: 924px) {
-    .features_section {
-        padding-top: 18rem;
-    }
-
-    .cta_section {
-        padding-top: 8rem;
-    }
-
-    .cta_section .container .content h4 {
-        font-size: 2.6rem;
-    }
-
     .cta_section .container .content img {
         position: absolute;
-        height: 8.5625rem;
         top: 80%;
         right: -8%;
     }
 
-    .cta_section .container .content p {
-        font-size: 1rem;
-    }
 }
 
 @media (max-width: 840px) {
@@ -317,28 +277,12 @@ footer .icons img {
         background-position: -17vw 12vh, 90vw 35vh;
     }
 
-    .cta_section .container .content h4 {
-        font-size: 2.4rem;
-    }
-}
-
-@media (max-width: 800px) {
-    .cta_section img {
-        height: 19rem;
-        width: 19rem;
-    }
-
     .cta_section .container .content {
         margin-left: -5.45rem;
     }
+
 }
 
-@media (max-width: 790px) {
-    .cta_section img {
-        height: 18rem;
-        width: 18rem;
-    }
-}
 
 @media (max-width: 700px) {
     .cta_section .container {
@@ -352,20 +296,9 @@ footer .icons img {
         margin-left: 0rem;
         margin-top: -2.8rem;
     }
-}
-
-@media (max-width: 572px) {
-    h1 {
-        font-size: 3rem;
-    }
-
-    .hero_image {
-        height: 18rem;
-    }
 
     header {
         background-image: none;
-        height: 30.5rem;
     }
 
     .features .feature {
@@ -374,19 +307,8 @@ footer .icons img {
         gap: 0px;
     }
 
-    .features .feature .title {
-        margin-top: 1.4rem;
-        margin-bottom: 1.4rem;
-        font-size: 2rem;
-    }
-
-    .features {
-        gap: 2.8rem;
-    }
-
     .cta_section .container .content {
         text-align: center;
-        padding: 3.4rem;
     }
 
     .cta_section .container .content .button_link {
@@ -395,43 +317,5 @@ footer .icons img {
 
     .cta_section .container .content img {
         display: none;
-    }
-
-}
-
-@media (max-width: 420px) {
-    h1 {
-        font-size: 2.2rem;
-    }
-
-    .cta_section .container .content h4 {
-        font-size: 2.0rem;
-    }
-
-    .cta_section .container .content {
-        padding: 2.8rem;
-    }
-
-}
-
-@media (max-width: 400px) {
-    h1 {
-        font-size: 2rem;
-    }
-
-    nav a {
-        font-size: 1rem;
-    }
-
-    .cta_section .container .content {
-        padding: 2.2rem;
-    }
-
-    a.button_link {
-        font-size: 1rem;
-    }
-
-    .features .feature .title {
-        font-size: 1.8rem;
     }
 }
